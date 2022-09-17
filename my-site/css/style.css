@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Tangerine', cursive;}
+/* ******************************************NAVIGATION****************************************** */
+.nav{
+    overflow: auto;
+    background-color: #CFD2CF;
+}
+    
+.nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 800px;
+}
+
+.nav li a {
+    float: left;
+    margin: 50px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #3FA796;
+}
+
+.nav li a:hover {
+    color: black;
+}
+
+.avatar {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    bottom: 15px;
+}
+/* ********************************TOP******************************* */
+.top {
+    text-align: center;
+    background-color: #CFD2CF;
+    /* border: 2px solid blue; */
+}
+.name {
+    font-family: 'Tangerine', cursive;
+    color: #3FA796;
+    font-size: 150px;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: 80px;
+}
+.human {
+    font-family: 'Tangerine', cursive;
+    color: #3FA796;
+    font-size: 50px;
+    position: relative;
+    bottom: 70px;
+}
+.top-cloud {
+    position: relative;
+    width: 200px;
+    left: 700px;    
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: relative;
+    width: 200px;
+    bottom: 350px;
+    left: 100px;
+}
+
+.land {
+    width: 1010px;
+    position: relative;
+    right: 60px;
+}
+/* *************************************************Profile******************************************** */
+.profile {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    width: 60%;
+    margin: auto ;
+    padding: 80px;
+}
+
+.profile-img {
+    width: 200px;
+}
+
+h1 {
+    font-family: Neue, Helvetica, Arial, sans-serif;    
+    font-size: 30px;
+    color: #45b29a;
+}
+
+p {
+    display: inline-block;
+    font-family: Neue, Helvetica, Arial, sans-serif;
+    width: 50%;
+    color: #545454;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 7px;
+    color: #dbc7c7;
+    width: 5%;    
+}
+
+/* *************************About****************** */
+.about {
+    text-align: center;
+    /* margin: 1px; */
+    padding: 50px;
+    overflow: auto;
+}
+.what-i-can-do {
+    color: #1e836c;
+    font-size: 60px;
+}
+.about-main {
+    /* width: 80%; */
+    margin: 100px;
+    /* padding: 0px 50px; */
+    /* position: relative;
+    left: 100px; */
+    
+}
+.about-para {
+    font-size: 30px;
+}
+.about-img {
+    width: 200px;
+    float: left;
+}

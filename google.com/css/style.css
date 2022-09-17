@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 35%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    /* line-height: ; */
+}
+
+.search-box {
+    width: 20%;
+    /* max-width: max-content; */
+    margin-bottom: 10px;
+    border-color: blue;
+    border-width: 1px;
+    border-radius: 10;
+}
