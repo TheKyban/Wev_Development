@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+        header::before {
+            content: "";
+            background: url("navigations/background.jpg") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: -1;
+
+        }
+        .nav-text {
+            display: flex;
+        }
+        .nav-text li {
+            list-style: none;
+            margin: 0px 34px;
+        }
+        section {
+            align-items: center;
+            margin: 4px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid red; */
+        }
+        section h3 {
+            font-size: 3rem;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul class="nav-text">
+                <li class="item">Home</li>
+                <li class="item">Call us</li>
+                <li class="item">Contact</li>
+                <li class="item">About</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed exercitationem facere repellat dolores veritatis quod nostrum id, pariatur natus. Placeat nisi asperiores, debitis quae facere eos voluptates laborum accusantium.</p>
+        </section>
+    </header>
+</body>
+</html>

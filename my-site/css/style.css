@@ -11,7 +11,7 @@ body {
     list-style: none;
     display: inline-block;
     position: relative;
-    left: 800px;
+    left: 30%;
 }
 
 .nav li a {
@@ -27,8 +27,8 @@ body {
 }
 
 .avatar {
-    width: 100px;
-    display: inline-block;
+    width: 150px;
+    display: inline-block; 
     position: relative;
     left: 200px;
     bottom: 15px;

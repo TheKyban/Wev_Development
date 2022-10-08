@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat, sans-serif';
+    
+}
+.row h1 {
+    font-family: 'Montserrat, sans-serif';
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+}
+
+#title {
+    background-color: #ff4c68;
+    position: relative;
+    z-index: 0;
+}
+.fluid {
+    padding:0% 5% 3%;
+}
+.home-intro {
+    padding: 3% 15% 0;
+}
+.fluid .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.fluid .navbar {
+    padding: 0% 14% ;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.fluid .nav-link {
+    font-size: 1.2rem;
+}
+.fluid .btn {
+    margin: 5% 2%;
+}
+.tittle-image {
+    position: relative;
+    top: 100px;
+    width: 60%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+#features {
+    background-color: #fff;
+    position: relative;
+}
+.feature-box {
+    padding: 7% 15%;
+}
+
+.feature-section {
+    text-align: center;
+    padding: 5%;
+}
+.icons {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+#testimonials h2 {
+    font-weight: 700;
+    line-height: 1.5;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 3rem;
+}
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+.testimonial-image {
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    padding: 3%;
+    text-align: center;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 0px 20px 50px;
+}
+.controls {
+    padding: 0px 100%;
+    margin: o;
+}
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-row-1 {
+    margin:0px 0px 100px;
+}
+.pricing-options {
+    margin: 20px 0px;
+}
+#cta {
+    background-color: #ef8172;
+    text-align: center;
+    padding: 5% 0px 0px;
+    color: #fff;
+}
+#cta h3 {
+    font-size: 3rem;
+}
+#cta .btn {
+    margin: 2% 2%;
+}
+#footer {
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+    background-color: #ef8172;
+}
