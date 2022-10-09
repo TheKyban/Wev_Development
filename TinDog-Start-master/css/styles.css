@@ -50,9 +50,11 @@ body {
 #features {
     background-color: #fff;
     position: relative;
+    
 }
 .feature-box {
-    padding: 7% 15%;
+    padding: 7% 10%;
+    display: flex;
 }
 
 .feature-section {
@@ -112,7 +114,7 @@ body {
 #cta {
     background-color: #ef8172;
     text-align: center;
-    padding: 5% 0px 0px;
+    padding: 5% 15% 0px;
     color: #fff;
 }
 #cta h3 {
@@ -126,4 +128,20 @@ body {
     text-align: center;
     color: #fff;
     background-color: #ef8172;
+}
+@media (max-width:1280px) {
+    #title {
+        text-align: center;
+    }
+    .tittle-image {
+        position: static;
+        width: 60%;
+        transform: rotate(0);
+    }
+}
+
+@media (max-width:1203px){
+    .feature-box {
+        flex-direction: column;
+    }
 }
