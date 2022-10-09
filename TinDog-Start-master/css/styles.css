@@ -4,67 +4,81 @@ body {
     font-family: 'Montserrat, sans-serif';
     
 }
-.row h1 {
+
+/* <----------NAVBAR-------> */
+
+#title {
+    background-color: #ff4c68;
+    position: relative;
+    z-index: 0;
+    /* text-align: center; */
+}
+
+#title .navbar {
+    padding: 0 14.2% ;
+    margin: 0;
+}
+.navbar .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* <----------HOME INTRO---------> */
+
+.home-intro {
+    padding: 0 15% ;
+    display: flex;
+}
+.btn {
+    margin: 5% 2%;
+}
+.home-intro-1 {
+    padding: 30px 0px 0px;
+}
+.home-intro h1 {
     font-family: 'Montserrat, sans-serif';
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
     color: white;
 }
-
-#title {
-    background-color: #ff4c68;
-    position: relative;
-    z-index: 0;
-}
-.fluid {
-    padding:0% 5% 3%;
-}
-.home-intro {
-    padding: 3% 15% 0;
-}
-.fluid .navbar-brand {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.fluid .navbar {
-    padding: 0% 14% ;
-}
-.nav-item {
-    padding: 0 10px;
-}
-.fluid .nav-link {
-    font-size: 1.2rem;
-}
-.fluid .btn {
-    margin: 5% 2%;
-}
 .tittle-image {
     position: relative;
-    top: 100px;
+    top: 70px;
     width: 60%;
     transform: rotate(25deg);
     z-index: -1;
 }
+
+/* <---------FEATURE--------> */
+
 #features {
     background-color: #fff;
     position: relative;
-    
 }
+
 .feature-box {
-    padding: 7% 10%;
-    display: flex;
+    text-align: center;
+    padding: 5%;
 }
 
 .feature-section {
-    text-align: center;
-    padding: 5%;
+    padding: 7% 10%;
+    display: flex;
 }
 .icons {
     color: #ef8172;
     margin-bottom: 1rem;
 }
+
+/* <----------TESTIMONIALS-------> */
 
 #testimonials h2 {
     font-weight: 700;
@@ -86,6 +100,8 @@ body {
     margin: 20px;
 }
 
+/* <-------PRESS-------> */
+
 #press {
     background-color: #ef8172;
     padding: 3%;
@@ -96,21 +112,24 @@ body {
     width: 15%;
     margin: 0px 20px 50px;
 }
-.controls {
-    padding: 0px 100%;
-    margin: o;
-}
+
+/* <--------PRICING--------> */
+
 #pricing {
     padding: 100px;
     text-align: center;
 }
 
-.pricing-row-1 {
+.pricing-statement {
     margin:0px 0px 100px;
+    font-size: 1.5rem;
 }
 .pricing-options {
     margin: 20px 0px;
 }
+
+/* <--------CALL-TO-ACTION---------> */
+
 #cta {
     background-color: #ef8172;
     text-align: center;
@@ -123,25 +142,37 @@ body {
 #cta .btn {
     margin: 2% 2%;
 }
+
+/* <--------FOOTER--------> */
+
 #footer {
     padding: 1%;
     text-align: center;
     color: #fff;
     background-color: #ef8172;
 }
-@media (max-width:1280px) {
+
+/* <------MEDIA-QUERY------> */
+
+/* MEDIA QUERY FOR HOME-INTRO */
+
+@media (max-width:1170px) {
+    .home-intro {
+        flex-direction: column;
+    }
     #title {
         text-align: center;
     }
     .tittle-image {
         position: static;
-        width: 60%;
+        height: 40%;
         transform: rotate(0);
     }
 }
+/* MEDIA QUERY FOR FEATURES */
 
 @media (max-width:1203px){
-    .feature-box {
+    .feature-section {
         flex-direction: column;
     }
 }
