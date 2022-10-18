@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Keyboard</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        background: url("background.jpg") no-repeat center center/cover;
+        height: 100vh;
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #logo img {
+        display: block;
+        height: 45px;
+        padding: 3px;
+    }
+    #logo {
+        margin: 3px 1vw;
+    }
+    #navbar ul{
+        display: flex;
+        list-style: none;
+    }
+    #navbar ul li {
+        font-size: 1.2rem;
+    }
+    #navbar ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 2px .5vw;
+        margin: 0 1vw;
+        border-radius: 10px;
+        color: white;
+    }
+    #navbar ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    #navbar::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .4;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="avatar.png" alt="">
+        </div>
+        <ul>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Services</a></li>
+            <li class="items"><a href="#">About us</a></li>
+            <li class="items"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

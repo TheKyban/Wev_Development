@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+}
+.sideBar {
+    /* display: flex; */
+    background-color: rgb(223, 230, 230);
+    height: 100vh;
+    width: 15vw;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+.sideBar nav {
+    padding: 0px;
+    /* margin: 0 ; */
+}
+.sideBar nav li {
+    list-style-type: none;
+    padding: 5vh 0vw;
+}
+.sideBar li a {
+    text-decoration: none;
+    color: rgb(41, 24, 54);
+    font-size: 4em;
+}
+.main{
+    background-color: white;
+    /* border: 2px solid rebeccapurple; */
+    padding: 5vh;
+    width: 100vw;
+}
+
+.contact {
+    margin: 0vh 8vw;
+    font-size: 2em;
+}
+.form-full {
+    margin: 8vh 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.contact-form {
+    margin: 2vh 0;
+}
+.inputBox {
+    width: 45vw;
+    height: 2vh;
+    padding: 15px 0px 7px 17px;
+    margin: 0vh 1vw;
+    font-size: 0.7em;
+}
+.radioBox {
+    width: 2vh;
+}
+.save-box {
+    width: 9vw;
+    height: 5vh;
+    font-size: 21px;
+    font-weight: 500;
+    background-color: white;
+    color: blue;
+    margin: 5vh 0vw 0 6vw;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+.save-box-1 {
+    margin: 5vh 0vw 0 6vw;
+}
+.save-box:hover {
+    background-color: whitesmoke;
+}
+.contact h1 {
+    font-family: 'Abyssinica SIL', serif;
+    font-weight: normal;
+}
