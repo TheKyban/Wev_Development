@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #E3FDFD;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Clock Container */
+    .TimeAndDate {
+        border-radius: 10px;
+        margin: 10% 50px 5px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+
+    .TimeAndDate::before {
+        content: "";
+        background-color: #CBF1F5;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: .9;
+        border-radius: 8px;
+    }
+
+    /* Item Container */
+    /* By Class */
+    .item {
+        border-radius: 10px;
+        position: relative;
+        z-index: 0;
+        color: #7D6E83;
+        /* padding: 0 5px; */
+    }
+
+    .item::before {
+        background-color: #A6E3E9;
+        border-radius: 8px;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: .9;
+    }
+
+    /* By Id */
+    #time {
+        font-size: 10rem;
+        margin-bottom: 20px;
+    }
+
+    #day {
+        font-size: 3rem;
+    }
+
+    /* Span Items */
+    #days {
+        padding: 0 5px;
+
+    }
+
+    #hours {
+        padding: 5px 0px 5px 5px;
+        
+    }
+    #AMPM {
+        font-size: 3rem;
+        padding: 5px 5px 5px 0px;
+    }
+
+    @media (max-width:414px) {
+        .TimeAndDate {
+            margin-top: 50%;
+        }
+        #time {
+            font-size: 5rem;
+        }
+        #AMPM {
+            font-size: 1.5rem;
+        }
+        #day {
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width:320px) {
+        #time {
+            font-size: 4rem;
+        }
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="TimeAndDate">
+            <div class="item" id="time">
+                <span id="hours">00:00:00</span><span id="AMPM">AM</span>
+            </div>
+            <div class="item" id="day">
+                <span id="days">The day And Date</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function The_Time() {
+            let Today_Time = new Date();
+            let hour = Today_Time.getHours();
+
+            let ampm = 'AM';
+            if (hour>12){
+                ampm = 'PM';
+            }
+
+            if (hour > 12) {
+                hour = hour - 12;
+            } else if (hour == 0) {
+                hour = 12;
+            }
+            hour = Twodigit(hour);
+            let min = Twodigit(Today_Time.getMinutes());
+            let sec = Twodigit(Today_Time.getSeconds());
+            let Full_Time = `${hour}:${min}:${sec}`
+            document.querySelector('#hours').innerHTML = Full_Time;
+            document.querySelector('#AMPM').innerHTML = ampm;
+            day.innerHTML = Today_Time.toDateString();
+        }
+        function Twodigit(num) {
+            if (num < 10) {
+                return `0${num}`;
+            } else {
+                return num;
+            }
+        }
+        setInterval(The_Time, 1000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .container {
+        margin: 40vh 0px 0px;
+        text-align: center;
+    }
+
+    #time {
+        border: 2px solid red;
+        font-size: 5rem;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #day {
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 2px solid blueviolet;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .item1::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+        opacity: .1;
+    }
+    .item {
+        position: relative;
+        margin: 0px 0px 25px;
+    }
+
+    @media (max-width:414px){
+        #time {
+            font-size: 3.5rem;
+        }
+        #day {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item1">
+            <span id="time">00:00:00</span>
+        </div>
+        <div class="item item2">
+            <span id="day">The Day</span>
+        </div>
+    </div>
+
+    <script>
+
+        function twoDigit(num) {
+            if (num < 10) {
+                return `0${num}`;
+            } else {
+                return num;
+            }
+        }
+
+        function setTime() {
+            let now = new Date();
+            let hour = twoDigit(now.getHours());
+            let ampm = 'AM';
+            if (hour > 12) {ampm = "PM"}
+            if (hour>12){hour = hour-12;}
+            else if (hour==0) {hour = 12;}
+            hour = twoDigit(hour);
+
+            let min = twoDigit(now.getMinutes());
+            let sec = twoDigit(now.getSeconds());
+            let day = now.toDateString();
+            let nowTime = `${hour}:${min}:${sec}:${ampm}`;
+            document.querySelector('#time').innerHTML = nowTime;
+            document.querySelector('#day').innerHTML = day;
+        }
+        setInterval(setTime,1000);
+    </script>
+</body>
+
+</html>
