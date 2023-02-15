@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Calculator</title>
 </head>
-
 <body>
-    <h1 class="text_center">Calculator Using HTML, CSS & JavaScript</h1>
-
-    <div class="container flex flex-col items-center mx-auto m-w-20">
-
-        <div class="row">
-            <input class="input" type="text">
-        </div>
-        <div class="row">
-
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">C</button>
-
+    <h1 class="heading">Calculator</h1>
+    <div class="container edit">
+        <div class="input edit">
+            <input class="input-inner font" type="text">
         </div>
 
-        <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">/</button>
+        <div class="row edit">
+            <button class="button font top_button">AC</button>
+            <button class="button font top_button">M</button>
+            <button class="button font top_button">%</button>
+            <button class="button font boadmas">/</button>
         </div>
-
-        <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
+        <div class="row edit">
+            <button class="button font int">7</button>
+            <button class="button font int">8</button>
+            <button class="button font int">9</button>
+            <button class="button font boadmas">*</button>
         </div>
-
-        <div class="row">
-            <button class="button">0</button>
-            <button class="button">-</button>
-            <button class="button">*</button>
-            <button class="button">=</button>
+        <div class="row edit">
+            <button class="button font int">4</button>
+            <button class="button font int">5</button>
+            <button class="button font int">6</button>
+            <button class="button font boadmas">+</button>
+        </div>
+        <div class="row edit">
+            <button class="button font int">1</button>
+            <button class="button font int">2</button>
+            <button class="button font int">3</button>
+            <button class="button font boadmas">-</button>
+        </div>
+        <div class="row edit">
+            <button class="button font zero int">0</button>
+            <button class="button font int">.</button>
+            <button class="button font boadmas">=</button>
         </div>
     </div>
-    <script src="Scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
-
 </html>
